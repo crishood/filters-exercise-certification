@@ -1,0 +1,12 @@
+@for (q of questions(); track q; let i = $index) {
+  <app-question [question]="q"
+    (change)="userAnswers[i] = $event">
+  </app-question>
+}
+<div>
+  @if (allAnswered()) {
+    <button class="inverse large" (click)="submit()">
+      Submit
+    </button>
+  }
+</div>

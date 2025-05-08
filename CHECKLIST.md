@@ -1,0 +1,8 @@
+- Open the category dropdown. It should display *Entertainment*, *Science*, *General Knowledge*, *Sports*, and all other categories.
+- Select *Sports* in the category dropdown. No sub-category dropdown should be displayed. You can then select a difficulty and click the "Create" button to create a quiz.
+- The quiz should display questions about sports.
+- Select *Entertainment* in the category dropdown. The sub-category dropdown should be displayed with options *Books*, *Film*, *Music*, and seven more.
+- Select *Books*, then a difficulty and click the "Create" button to create a quiz.
+- The quiz should display questions about books.
+- Select *Geography* in the category dropdown. No sub-category dropdown should be displayed. You can then select a difficulty and click the "Create" button to create a quiz.
+- The quiz should display questions about geography.

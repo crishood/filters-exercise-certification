@@ -1,0 +1,9 @@
+<p [innerHTML]="question().question"></p>
+<div>
+  @for (answer of question().all_answers; track answer) {
+    <button (click)="buttonClicked(answer)"
+      [class]="getButtonClass(answer)"
+      [innerHTML]="answer">
+    </button>
+  }
+</div>
