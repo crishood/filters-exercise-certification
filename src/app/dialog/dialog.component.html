@@ -1,0 +1,11 @@
+<dialog #dialog>
+  <div class="card">
+    <h3 class="section">{{title()}}</h3>
+    <div class="section double-padded">
+      <ng-content select="[body]" />
+    </div>
+    <div class="section footer">
+      <ng-content select="[footer]" />
+    </div>
+  </div>
+</dialog>

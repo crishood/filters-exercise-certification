@@ -1,12 +1,16 @@
 @for (q of questions(); track q; let i = $index) {
-  <app-question [question]="q"
-    (change)="userAnswers[i] = $event">
+  <app-question [question]="q" (change)="userAnswers[i] = $event">
   </app-question>
 }
 <div>
   @if (allAnswered()) {
-    <button class="inverse large" (click)="submit()">
-      Submit
-    </button>
+    <button class="inverse large" (click)="onOpenDialog()">Submit</button>
   }
 </div>
+<app-dialog #dialog title="Are you sure?">
+  <div body>Yo can try it again</div>
+  <div footer>
+    <button class="inverse large" (click)="onCloseDialog()">Cancel</button>
+    <button class="inverse large" (click)="submit()">Confirm</button>
+  </div>
+</app-dialog>

@@ -1,0 +1,13 @@
+dialog {
+  border: 0;
+  padding: 0;
+  .card {
+    margin: 2px;
+  }
+  .section {
+    background-color: white;
+  }
+  .section.footer {
+    padding: 2px;
+  }
+}
